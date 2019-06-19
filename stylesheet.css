@@ -1,0 +1,180 @@
+/*------------------------------------------
+Variables & Common styling
+------------------------------------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image:url("content/back2.png");
+}
+
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 100%;
+    border: 2px solid black;
+}
+.imgsmall {
+    width: 80px;
+}
+
+/*----fonts -----*/
+
+@font-face {
+  font-family: "8BITWONDERNominal";
+
+  src: url("./fonts/8-BITWONDER.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/8-BITWONDER.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+    font-family: '8BITWONDERNominal';
+    font-size: 3rem;
+    text-align: center;
+}
+h2 {
+    font-family: '8BITWONDERNominal';
+    font-size: 2rem;
+    text-align: center;
+}
+h3 {
+        font-family: '8BITWONDERNominal';
+    font-size: 1.3rem;
+    text-align: center;
+}
+a {
+    font-family: '8BITWONDERNominal';
+    text-decoration: none;
+    color: black;
+}
+
+p,i {
+    font-family: 'Teko', sans-serif;
+    font-size: 1rem;  
+    font-weight: 600;
+}
+
+/*--- header-----*/ 
+header {
+    position:fixed;
+    width: 100%;
+    height: 10vh;
+}
+
+header nav {
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#projektmenu {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding-left: 0px;
+}
+.menutoggler {
+    padding-right: 70px;
+    padding-top: 10px;
+    font-family: '8BITWONDERNominal';
+    text-decoration: none;
+    color: black;
+}
+
+.menuitem {
+    padding: 10px 0px 20px 20px;
+    width: 100%;
+    background-color: aliceblue;
+    border: 2px solid black;  
+}
+li a {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 30px 0px 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+    header nav {
+    padding: 0px 30px 0px 0px;
+    
+    }
+    #projektmenu {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .menuitem {
+    max-width: 170px;
+    padding: 20px 6px;
+    font-size: 0.8rem;
+    text-align: center;
+    }
+}
+/*---- Animation and script toggle----*/
+
+.hidden {
+    display: none;
+    transform: scale(0);
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+/*------------------------------------------
+Page specific styles
+------------------------------------------*/
+
+#projektsamling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projekt {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    
+}
+.projekt:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: 2px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+.toptext {
+    display: flex;
+    justify-content:space-between;
+}
+
